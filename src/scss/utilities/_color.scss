@@ -1,0 +1,56 @@
+/**
+* BLiP Toolkit
+* Base Color Classes
+*/
+
+//Corporate
+@include register-base-color('bot', $bp-color-bot);
+@include register-base-color('blip-light', $bp-color-blip-light);
+@include register-base-color('blip-dark', $bp-color-blip-dark);
+
+//Semiotic
+@include register-base-color('wind', $bp-color-wind);
+@include register-base-color('smurf', $bp-color-smurf);
+@include register-base-color('sea', $bp-color-sea);
+@include register-base-color('blue-jeans', $bp-color-blue-jeans);
+
+@include register-base-color('true', $bp-color-true);
+@include register-base-color('true-dark', bp-darken($bp-color-true));
+
+@include register-base-color('warning-yellow', $bp-color-warning-yellow);
+@include register-base-color('cheetos', $bp-color-cheetos);
+@include register-base-color('doritos', $bp-color-doritos);
+
+@include register-base-color('warning-light', $bp-color-warning-light);
+@include register-base-color('delete', $bp-color-delete);
+@include register-base-color('delete-dark', bp-darken($bp-color-delete));
+@include register-base-color('warning', $bp-color-warning);
+@include register-base-color('watermelon', $bp-color-watermelon);
+
+//Neutrals
+@include register-base-color('piano', $bp-color-piano);
+@include register-base-color('elevator', $bp-color-elevator);
+@include register-base-color('console', $bp-color-console);
+@include register-base-color('obsidian', $bp-color-obsidian);
+@include register-base-color('onix', $bp-color-onix);
+@include register-base-color('cloud-burst', $bp-color-cloud-burst);
+@include register-base-color('suit', $bp-color-suit);
+@include register-base-color('city', $bp-color-city);
+@include register-base-color('city-dark', bp-darken($bp-color-city));
+@include register-base-color('city-light', bp-lighten($bp-color-city));
+@include register-base-color('desk', $bp-color-desk);
+@include register-base-color('rooftop', $bp-color-rooftop);
+@include register-base-color('cloud', $bp-color-cloud);
+@include register-base-color('silver', $bp-color-silver);
+@include register-base-color('time', $bp-color-time);
+@include register-base-color('breeze', $bp-color-breeze);
+@include register-base-color('wave', $bp-color-wave);
+@include register-base-color('sky', $bp-color-sky);
+@include register-base-color('offwhite', $bp-color-offwhite);
+@include register-base-color('athens-gray', $bp-color-athens-gray);
+@include register-base-color('whisper', $bp-color-whisper);
+
+//Generic
+@include register-base-color('white', $bp-color-white);
+@include register-base-color('black', $bp-color-black);
+@include register-base-color('transparent', transparent);

@@ -1,0 +1,13 @@
+@mixin register-base-color($name, $value) {
+  .bp-c-#{$name} {
+    color: $value;
+  }
+
+  .bp-bc-#{$name} {
+    border-color: $value;
+  }
+
+  .bp-bg-#{$name} {
+    background-color: $value;
+  }
+}
