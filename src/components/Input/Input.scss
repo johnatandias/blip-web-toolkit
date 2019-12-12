@@ -21,23 +21,15 @@
   & > input {
     border: none;
     caret-color: $bp-color-bot;
-    color: $bp-color-silver;
+    color: $bp-color-city;
     font-size: 14px;
     background-color: transparent;
+    @include placeholder($bp-color-silver);
 
     &:focus {
       outline: none;
     }
-
-    &::placeholder,
-    &:-ms-input-placeholder,
-    &::-ms-input-placeholder {
-      font-weight: normal;
-      font-size: 14px;
-      color: $bp-color-silver;
-    }
   }
-
 
   &:hover,
   &.focused {
