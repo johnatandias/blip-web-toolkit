@@ -1,20 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Styled } from 'direflow-component'
+import { IBWTInputAttributes, IBWTInputProperties } from './properties';
 import styles from './Input.scss'
 
-interface BWTInputProps {
-  label: string
-  type?: string
-  name?: string
-  value?: string | number
-  disabled?: boolean
-  description?: string
-  onChangeValue: (value: string) => void
-  validValue: RegExp
-  errorMessage: string
-}
+interface IBWTInputProps extends IBWTInputProperties, IBWTInputAttributes {} 
 
-export const BWTInput: React.FC<BWTInputProps> = ({
+export const BWTInput: React.FC<IBWTInputProps> = ({
   type = 'text',
   label,
   name,
@@ -23,7 +14,7 @@ export const BWTInput: React.FC<BWTInputProps> = ({
   description,
   onChangeValue,
   validValue,
-  errorMessage,
+  errorMessage = 'Invalid value',
 }) => {
   const [inputFocused, setInputFocused] = useState<boolean>(false)
   const [invalidValue, setInvalidValue] = useState<boolean>(false)
